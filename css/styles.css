@@ -315,7 +315,7 @@ button {
 
 .footer__container .footer__info .info__logo img {
   width: 100%;
-  filter: invert(1) brightness(100);
+  filter: invert(1) grayscale(1) brightness(100);
 }
 
 .footer__container .footer__info .info__description {
