@@ -595,7 +595,7 @@ button {
   /* -------- INSERTANDO IMAGENES BACKGROUND -------- */
 
   .footer__container::before {
-    top: -50px;
+    top: -42px;
     background-image: url('../images/bg-footer-top-mobile.svg');
   }
 
