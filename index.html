@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nombre del autor">
+    <meta name="description" content="Descripcion del proyecto">
+    <!-- Biblioteca de íconos Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Archivo reset Normalize -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Archivo de estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <title>Huddle Landing Page Curved Sections</title>
+</head>
+
+<body>
+
+    <header class="header__container">
+        <div class="header__logo">
+            <img src="images/logo.svg" alt="Logo">
+        </div>
+
+        <button class="header__btn_try">Try it free</button>
+    </header>
+
+    <main class="container">
+        <section class="container__huddle_introduction">
+            <h1 class="huddle_introduction__title">Build The Community Your Fans Will Love</h1>
+
+            <p class="huddle_introduction__description">
+                Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create
+                connections with your users as you engage in genuine discussion.
+            </p>
+
+            <button class="btn_getStarted">Get Started For Free</button>
+
+            <div class="huddle_introduction__mockup">
+                <img src="images/screen-mockups.svg" alt="Screen Mockup">
+            </div>
+
+            <div class="huddle_introduction__counter">
+                <div class="counter__item">
+                    <img src="images/icon-communities.svg" alt="Icon communities">
+                    <h2 class="counter__number">1.4k+</h2>
+                    <p class="counter__text">Communities Formed</p>
+                </div>
+                <div class="counter__item">
+                    <img src="images/icon-messages.svg" alt="Icon messages">
+                    <h2 class="counter__number">2.7m+</h2>
+                    <p class="counter__text">Messages Sent</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container__feature grow_together">
+            <div class="feature__text_content">
+                <h2 class="feature__title">Grow Together</h2>
+                <p class="feature__description">
+                    Generate meaningful discussions with your audience and build a strong, loyal community. Think of the
+                    insightful conversations you miss out on with a feedback form.
+                </p>
+            </div>
+
+            <div class="feature__image_container">
+                <img src="images/illustration-grow-together.svg" alt="Illustration Grow Together">
+            </div>
+        </section>
+
+        <section class="container__feature flowing_conversation">
+            <div class="feature__text_content">
+                <h2 class="feature__title">Flowing Conversations</h2>
+                <p class="feature__description">
+                    You wouldn't paginate a conversation in real life, so why do it online? Our threads have
+                    just-in-time loading for a more natural flow.
+                </p>
+            </div>
+
+            <div class="feature__image_container">
+                <img src="images/illustration-flowing-conversation.svg" alt="Illustration Flowing Conversations">
+            </div>
+        </section>
+
+        <section class="container__feature your_users">
+            <div class="feature__text_content">
+                <h2 class="feature__title">Your Users</h2>
+                <p class="feature__description">
+                    It takes no time at all to integrate Huddle with your app's authentication solution. This means,
+                    once signed in to your app, your users can start chatting immediately.
+                </p>
+            </div>
+
+            <div class="feature__image_container">
+                <img src="images/illustration-your-users.svg" alt="Illustration Your Users">
+            </div>
+        </section>
+
+        <section class="container__ready_started">
+            <h2 class="ready_started__title">Ready To Build Your Community?</h2>
+            <button class="btn_getStarted">Get Started For Free</button>
+        </section>
+    </main>
+
+    <footer class="footer__container">
+        <section class="footer__info">
+            <div class="info__logo">
+                <img src="images/logo.svg" alt="Logo">
+            </div>
+
+            <p class="info__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia vestibulum
+                a, ultrices quis sem.
+            </p>
+
+            <a href="#" class="info__link">
+                <img src="images/icon-phone.svg" alt="Icon phone">
+                <p>Phone: +1-543-123-4567</p>
+            </a>
+
+            <a href="#" class="info__link">
+                <img src="images/icon-email.svg" alt="Icon email">
+                <p>example@huddle.com</p>
+            </a>
+
+            <div class="info__social_links">
+                <a href="#">
+                    <i class="fa-brands fa-square-facebook"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-square-twitter"></i>
+                </a>
+            </div>
+        </section>
+
+        <section class="footer__newsletter">
+            <h2 class="newsletter__title">Newsletter</h2>
+            <p class="newsletter__description">
+                To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never send you
+                spam or pass on your email address.
+            </p>
+
+            <div class="newsletter__form">
+                <input type="text" class="newsletter__input" id="email">
+                <p class="error_message">Check your email please</p>
+                <button class="newsletter__btn" onclick="subscribe()">Subscribe</button>
+            </div>
+        </section>
+    </footer>
+
+    <div id="toast">
+        <span class="toast_message">
+            <i id="toast_icon" class="fa-solid fa-check-circle"></i>
+            <span id="toast_text">Thank you for subscribing!</span>
+        </span>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
