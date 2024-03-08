@@ -346,6 +346,7 @@ button {
   color: var(--very-pale-blue);
 }
 
+
 .footer__container .footer__info .info__social_links a:hover {
   color: var(--pink);
   filter: hue-rotate(255deg) brightness(1.5);
